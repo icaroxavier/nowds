@@ -1,2 +1,2 @@
-export * from './colors'
-export * from './gradients'
+export * from './themes/defaultTheme'
+export * from './themes/marketNodeTheme'

@@ -1,4 +1,4 @@
-import { colors } from '@nowds/tokens'
+import { defaultTheme } from '@nowds/tokens'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ...colors,
+        ...defaultTheme.colors,
       },
       fontFamily: {
         body: ['Space Grotesk', 'sans-serif'],
