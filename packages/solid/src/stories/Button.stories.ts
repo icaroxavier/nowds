@@ -15,14 +15,15 @@ const meta = {
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
     children: {
-      control: {
-        type: 'text'
-      }
+      control: 'text',
+      description: 'The content of the button'
     },
     variant: {
-      control: {
-        type: 'select',
-        options: ['primary', 'secondary']
+      control: 'radio',
+      options: ['primary', 'secondary'],
+      description: 'The variant of the button',
+      table: {
+        defaultValue: { summary: 'primary' },
       }
     }
   },
@@ -34,14 +35,14 @@ type Story = StoryObj<typeof meta>
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    children: 'Button',
+    children: 'Primary',
     variant: 'primary'
   },
 }
 
 export const Secondary: Story = {
   args: {
-    children: 'Button',
+    children: 'Secondary',
     variant: 'secondary'
   },
 }
