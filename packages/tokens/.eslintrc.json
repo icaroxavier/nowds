@@ -1,0 +1,3 @@
+{
+  "extends": "@nowds/eslint-config"
+}
