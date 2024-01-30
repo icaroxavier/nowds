@@ -1,11 +1,11 @@
 import { type JSXElement } from 'solid-js'
 
-interface Props {
+export type ButtonProps = {
   children: JSXElement
   variant?: 'primary' | 'secondary'
 }
 
-export function Button ({ children, variant = 'primary' }: Props): JSXElement {
+export function Button ({ children, variant = 'primary' }: ButtonProps): JSXElement {
   return (
     <button
    

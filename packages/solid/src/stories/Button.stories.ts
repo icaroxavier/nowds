@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from 'storybook-solidjs'
 
-import { Button } from '..'
+import { Button, ButtonProps } from '..'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
@@ -27,10 +27,10 @@ const meta = {
       }
     }
   },
-} satisfies Meta<typeof Button>
+} satisfies Meta<ButtonProps>
 
 export default meta
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<ButtonProps>
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
