@@ -1,9 +1,11 @@
-import { ReactNode } from "react"
+import { ReactNode } from 'react'
 
 type Props = {
-    children: ReactNode
+  children: ReactNode
 }
 
 export function Button({ children }: Props) {
-    return <button className="p-2 text-white rounded bg-primary">{children}</button>
+  return (
+    <button className="p-2 text-white rounded bg-primary">{children}</button>
+  )
 }

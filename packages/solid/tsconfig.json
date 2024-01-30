@@ -1,0 +1,4 @@
+{
+  "extends": "@nowds/ts-config/solid.json",
+  "include": ["src"]
+}
