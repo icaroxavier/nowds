@@ -1,4 +1,4 @@
-import { Gradients } from '../../types/types'
+import { Gradients } from '../../types'
 import { colors } from './colors'
 
 export const gradients = {

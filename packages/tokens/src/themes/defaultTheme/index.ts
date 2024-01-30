@@ -1,5 +1,5 @@
 import { spacing } from '../../spacing'
-import { ThemeType } from '../../types/types'
+import { ThemeType } from '../../types'
 import { colors } from './colors'
 import { gradients } from './gradients'
 

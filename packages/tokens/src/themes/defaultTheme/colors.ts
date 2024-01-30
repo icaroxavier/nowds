@@ -1,4 +1,4 @@
-import { Colors } from '../../types/types'
+import { Colors } from '../../types'
 
 export const colors = {
   primary: '#1b41aa',
