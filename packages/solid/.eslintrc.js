@@ -1,9 +1,14 @@
-module.exports = {
+export default {
     "env": {
         "browser": true,
         "es2021": true
     },
-    "extends": ["standard-with-typescript", "eslint:recommended", "plugin:solid/typescript"],
+    "extends": [
+        "standard-with-typescript",
+        "eslint:recommended",
+        "plugin:solid/typescript",
+        "plugin:storybook/recommended"
+    ],
     "overrides": [
         {
             "env": {

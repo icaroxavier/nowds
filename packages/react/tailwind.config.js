@@ -1,4 +1,4 @@
-import { colors } from '@nowds/tokens'
+import { colors, gradients } from '@nowds/tokens'
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

@@ -9,7 +9,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        package: colors.primary
+        ...colors,
+      },
+      fontFamily: {
+        body: ['Space Grotesk', 'sans-serif'],
       }
     },
   },
