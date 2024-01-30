@@ -1,10 +1,15 @@
-export type InputTextProps = React.InputHTMLAttributes<HTMLInputElement>
+import styled from 'styled-components'
 
-export function InputText(props: InputTextProps) {
-  return (
-    <input
-      {...props}
-      className="py-[calc(0.25rem-1px)] px-3 text-sm leading-6 text-nowLight rounded-lg border border-solid border-nowLight outline-none focus:border-primary transition-colors"
-    />
-  )
-}
+export const InputText = styled.input`
+  color: ${({ theme }) => theme.colors.nowLight};
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: ${({ theme }) => theme.fontSizes.medium};
+  font-style: normal;
+  font-weight: 400;
+  line-height: ${({ theme }) => theme.lineHeights.input};
+  border-radius: 8px;
+  border: 1px solid var(--Palette-Blue-color-blue-20, #d1d9ee);
+`
+
+type InputTextProps = React.ComponentProps<typeof InputText>
+export type { InputTextProps }
