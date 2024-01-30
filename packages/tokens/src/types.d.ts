@@ -5,6 +5,7 @@ export type Colors = {
   nowPurple: string
   nowGreen: string
   nowLight: string
+  white: string
 }
 
 export type Gradients = {

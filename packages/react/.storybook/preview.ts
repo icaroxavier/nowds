@@ -1,15 +1,15 @@
-import type { Preview } from "@storybook/react";
+import { withThemeFromJSXProvider } from '@storybook/addon-themes';
+import { defaultTheme, marketNodeTheme } from '@nowds/tokens';
+import { ThemeProvider, GlobalStyles } from '../src'
 
-const preview: Preview = {
-  parameters: {
-    actions: { argTypesRegex: "^on[A-Z].*" },
-    controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
+export const decorators = [
+  withThemeFromJSXProvider({
+    themes: {
+      default: defaultTheme,
+      marketNode: marketNodeTheme,
     },
-  },
-};
-
-export default preview;
+    defaultTheme: 'default',
+    Provider: ThemeProvider,
+    GlobalStyles: GlobalStyles, // Adds your GlobalStyle component to all stories
+  }),
+];
