@@ -5,5 +5,5 @@ type Props = {
 }
 
 export function Button({ children }: Props) {
-    return <button className="p-2 bg-green-500 text-white rounded">{children}</button>
+    return <button className="p-2 text-white rounded bg-primary">{children}</button>
 }
