@@ -1,9 +1,9 @@
-import { JSXElement } from "solid-js"
+import { type JSXElement } from 'solid-js'
 
-type Props = {
-    children: JSXElement
+interface Props {
+  children: JSXElement
 }
 
-export function Button({ children }: Props) {
-    return <button class="p-2 text-white rounded bg-primary">{children}</button>
+export function Button (props: Props): JSXElement {
+  return <button class="p-2 text-white rounded bg-primary">{props.children}</button>
 }
