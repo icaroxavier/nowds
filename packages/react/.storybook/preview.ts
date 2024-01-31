@@ -1,5 +1,5 @@
 import { withThemeFromJSXProvider } from '@storybook/addon-themes';
-import { defaultTheme, marketNodeTheme } from '@nowds/tokens';
+import { defaultTheme, marketNodeTheme, darkTheme } from '@nowds/tokens';
 import { ThemeProvider, GlobalStyles } from '../src'
 
 export const decorators = [
@@ -7,6 +7,7 @@ export const decorators = [
     themes: {
       default: defaultTheme,
       marketNode: marketNodeTheme,
+      dark: darkTheme 
     },
     defaultTheme: 'default',
     Provider: ThemeProvider,

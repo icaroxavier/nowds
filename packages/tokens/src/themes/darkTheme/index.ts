@@ -3,8 +3,8 @@ import { colors } from './colors'
 import { gradients } from './gradients'
 import { commonTokens } from '../../commonTokens'
 
-export const defaultTheme = {
-  isDarkTheme: false,
+export const darkTheme = {
+  isDarkTheme: true,
   colors,
   gradients,
   ...commonTokens,

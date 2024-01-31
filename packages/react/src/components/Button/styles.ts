@@ -7,10 +7,11 @@ type ButtonContainerProps = {
 export const ButtonContainer = styled.button<ButtonContainerProps>`
   color: ${({ theme, $variant }) => {
     if ($variant === 'primary') {
-      return theme.colors.white || '#fff'
+      if (theme.isDarkTheme) return '#292929'
+      return theme.colors.white
     }
     if ($variant === 'secondary') {
-      return theme.colors.primary
+      return theme.colors.text
     }
   }};
   background: ${({ theme }) => theme.gradients.primary};
@@ -40,9 +41,10 @@ export const ButtonContent = styled.span<ButtonContentProps>`
   padding-left: calc(${({ theme }) => theme.spacing[8]} - 1px);
   padding-right: calc(${({ theme }) => theme.spacing[8]} - 1px);
   border-radius: calc(${({ theme }) => theme.spacing[8]} - 1px);
-  background: ${({ theme, $variant }) => {
+  background: ${({ $variant, theme }) => {
     if ($variant === 'secondary') {
-      return theme.colors.white || '#fff'
+      if (theme.isDarkTheme) return '#292929'
+      return theme.colors.white
     }
   }};
 `
