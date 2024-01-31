@@ -1,4 +1,7 @@
+import { BorderRadius } from './borderRadius'
 import { FontSizes } from './fontSizes'
+import { FontWeights } from './fontWeights'
+import { Fonts } from './fonts'
 import { LineHeights } from './lineHeights'
 import { Spacing } from './spacing'
 
@@ -24,4 +27,7 @@ export type ThemeType = {
   spacing: Spacing
   fontSizes: FontSizes
   lineHeights: LineHeights
+  fonts: Fonts
+  fontWeights: FontWeights
+  borderRadius: BorderRadius
 }
