@@ -14,7 +14,7 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
     }
   }};
   background: ${({ theme }) => theme.gradients.primary};
-  border-radius: ${({ theme }) => theme.spacing[8]};
+  border-radius: ${({ theme }) => theme.borderRadius.lg};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +41,7 @@ export const ButtonContent = styled.span<ButtonContentProps>`
   padding-bottom: calc(${({ theme }) => theme.spacing[5]} - 1px);
   padding-left: calc(${({ theme }) => theme.spacing[8]} - 1px);
   padding-right: calc(${({ theme }) => theme.spacing[8]} - 1px);
-  border-radius: calc(${({ theme }) => theme.spacing[8]} - 1px);
+  border-radius: calc(${({ theme }) => theme.borderRadius.lg} - 1px);
   background: ${({ $variant, theme }) => {
     if ($variant === 'secondary') {
       if (theme.isDarkTheme) return '#292929'
