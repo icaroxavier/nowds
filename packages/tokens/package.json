@@ -4,10 +4,17 @@
   "description": "",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
-  "types": "./src/types.d.ts",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./types": "./dist/types.d.d.ts"
+  },
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "dev": "tsup src/index.ts src/types.d.ts --format esm,cjs --dts --watch",
     "lint": "eslint src/**/*.ts* --fix"
   },
   "keywords": [],
