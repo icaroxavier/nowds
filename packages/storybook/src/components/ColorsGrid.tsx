@@ -1,4 +1,4 @@
-import { useTheme } from '../../index'
+import { useTheme } from '@nowds/react'
 import { getContrast } from 'polished'
 
 export function ColorsGrid() {

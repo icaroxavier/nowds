@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { InputText, InputTextProps } from '..'
+import { Text, TextProps } from '@nowds/react'
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'React/InputText',
-  component: InputText,
+  title: 'React/Text',
+  component: Text,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
@@ -14,14 +14,14 @@ const meta = {
   tags: ['autodocs'],
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {},
-} satisfies Meta<InputTextProps>
+} satisfies Meta<TextProps>
 
 export default meta
-type Story = StoryObj<InputTextProps>
+type Story = StoryObj<TextProps>
 
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    placeholder: 'Type something...',
+    children: 'Hello, World!',
   },
 }

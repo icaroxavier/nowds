@@ -1,6 +1,6 @@
 import { withThemeFromJSXProvider } from "@storybook/addon-themes";
 import { defaultTheme, marketNodeTheme, darkTheme } from "@nowds/tokens";
-import { ThemeProvider, GlobalStyles } from "../src";
+import { ThemeProvider, GlobalStyles } from "@nowds/react";
 import { themes } from "@storybook/theming";
 
 export const decorators = [

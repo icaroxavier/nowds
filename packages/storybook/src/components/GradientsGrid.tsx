@@ -1,4 +1,4 @@
-import { useTheme } from '../../index'
+import { useTheme } from '@nowds/react'
 
 export function GradientsGrid() {
   const { gradients } = useTheme()

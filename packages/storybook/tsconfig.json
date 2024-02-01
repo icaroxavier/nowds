@@ -1,0 +1,4 @@
+{
+  "extends": "@nowds/ts-config/react.json",
+  "include": ["src"]
+}

@@ -1,0 +1,6 @@
+{
+    "extends": [
+        "@nowds/eslint-config",
+        "plugin:storybook/recommended"
+    ]
+}

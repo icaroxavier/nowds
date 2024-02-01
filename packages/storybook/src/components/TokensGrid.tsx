@@ -1,5 +1,5 @@
 import { TokensGridContainer } from './TokensGrid.styles'
-import { useTheme } from '../../index'
+import { useTheme } from '@nowds/react'
 
 interface TokensGridProps {
   token: string
