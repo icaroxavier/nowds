@@ -21,15 +21,17 @@ export function TokensGrid({ token, hasRemValue = false }: TokensGridProps) {
 
       <tbody>
         {Object.entries(theme[token]).map(([key, value]) => {
-          value = String(value)
+          const stringValue = String(value)
           return (
             <tr key={key}>
               <td>{key}</td>
-              <td>{value}</td>
-              {hasRemValue && value.includes('rem') && (
-                <td>{Number(value.replace('rem', '')) * 16}px</td>
+              <td>{stringValue}</td>
+              {hasRemValue && stringValue.includes('rem') && (
+                <td>{Number(stringValue.replace('rem', '')) * 16}px</td>
               )}
-              {hasRemValue && value.includes('px') && <td>{value}</td>}
+              {hasRemValue && stringValue.includes('px') && (
+                <td>{stringValue}</td>
+              )}
             </tr>
           )
         })}
