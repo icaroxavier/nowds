@@ -16,17 +16,19 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   }};
   background: ${({ theme }) => theme.gradients.primary};
   border-radius: ${({ theme }) => theme.spacing[8]};
-  font-weight: 500;
-  line-height: 1;
-  letter-spacing: 0.24px;
   display: flex;
   align-items: center;
   justify-content: center;
   outline: none;
   border: none;
   padding: 1px;
-  font-family: 'Space Grotesk', sans-serif;
   cursor: pointer;
+
+  letter-spacing: 0.24px;
+  font-weight: ${({ theme }) => theme.fontWeights.semiBold};
+  line-height: ${({ theme }) => theme.lineHeights.default};
+  font-size: ${({ theme }) => theme.fontSizes.small};
+  font-family: ${({ theme }) => theme.fonts.body};
 `
 
 type ButtonContentProps = {

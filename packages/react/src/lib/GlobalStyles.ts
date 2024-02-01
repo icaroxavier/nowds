@@ -2,8 +2,12 @@ import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyles = createGlobalStyle`
     body {
-        font-family: 'Space Grotesk', sans-serif;
-        --webkit-font-smoothing: antialiased;   
+        font-family: ${({ theme }) => theme.fonts.body};
+        --webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: ${({ theme }) => theme.fonts.title};
     }
 
     * {
