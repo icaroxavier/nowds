@@ -7,7 +7,6 @@ type ButtonContainerProps = {
 export const ButtonContainer = styled.button<ButtonContainerProps>`
   color: ${({ theme, $variant }) => {
     if ($variant === 'primary') {
-      if (theme.isDarkTheme) return '#292929'
       return theme.colors.white
     }
     if ($variant === 'secondary') {

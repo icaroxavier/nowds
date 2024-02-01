@@ -6,6 +6,6 @@ export const borderRadius = {
   lg: '1rem', // 16px
   xl: '1.5rem', // 24px
   full: '9999px',
-}
+} as const
 
 export type BorderRadius = typeof borderRadius

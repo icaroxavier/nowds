@@ -1,6 +1,6 @@
 export const spacing = {
-  1: '0.125rem',
-  2: '0.25rem',
+  1: '0.125rem', // 2px
+  2: '0.25rem', // 4px
   3: '0.375rem',
   4: '0.5rem',
   5: '0.625rem',
