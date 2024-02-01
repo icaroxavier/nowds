@@ -5,10 +5,7 @@ export function ColorsGrid() {
   const { colors } = useTheme()
   return Object.entries(colors).map(([key, color]) => {
     return (
-      <div
-        key={key}
-        style={{ backgroundColor: color as string, padding: '2rem' }}
-      >
+      <div key={key} style={{ background: color as string, padding: '2rem' }}>
         <div
           style={{
             display: 'flex',
