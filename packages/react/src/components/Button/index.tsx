@@ -15,3 +15,5 @@ export function Button({
     </ButtonContainer>
   )
 }
+
+Button.displayName = 'Button'

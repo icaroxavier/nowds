@@ -27,3 +27,5 @@ export const InputText = styled.input`
 
 type InputTextProps = React.ComponentProps<typeof InputText>
 export type { InputTextProps }
+
+InputText.displayName = 'InputText'

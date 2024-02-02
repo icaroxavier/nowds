@@ -5,3 +5,5 @@ type TextProps = React.ComponentProps<typeof Text>
 
 export { Text }
 export type { TextProps }
+
+Text.displayName = 'Text'
