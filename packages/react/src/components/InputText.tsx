@@ -31,7 +31,7 @@ type InputTextProps = ComponentProps<typeof StyledInputText>
 const InputText = forwardRef<
   ElementRef<typeof StyledInputText>,
   InputTextProps
->((props) => <StyledInputText {...props} />)
+>((props, ref) => <StyledInputText {...props} ref={ref} />)
 
 export type { InputTextProps }
 
