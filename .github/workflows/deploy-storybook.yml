@@ -22,7 +22,7 @@ jobs:
             - run: npm run build
               env:
                 TURBO_TOKEN: D4zOPLQYfo9ISkYmOHFk0PIf
-
+                TURBO_TEAM: xalodev-s-team
             - name: Deploy Storybook
               working-directory: ./packages/storybook
               run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
