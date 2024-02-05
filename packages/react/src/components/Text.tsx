@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Text = styled.span`
   color: ${({ theme }) => theme.colors.text};
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: ${({ theme }) => theme.fonts.body};
 `
 
 export type TextProps = React.ComponentProps<typeof Text>

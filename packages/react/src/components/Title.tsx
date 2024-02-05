@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-export const Text = styled.span`
+export const Text = styled.h1`
   color: ${({ theme }) => theme.colors.text};
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: ${({ theme }) => theme.fonts.title};
 `
 
 export type TextProps = React.ComponentProps<typeof Text>
