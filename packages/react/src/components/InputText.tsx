@@ -1,6 +1,7 @@
+import { ComponentProps, ElementRef, forwardRef } from 'react'
 import styled from 'styled-components'
 
-export const InputText = styled.input`
+export const StyledInputText = styled.input`
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.body};
   font-size: ${({ theme }) => theme.fontSizes.medium};
@@ -25,7 +26,13 @@ export const InputText = styled.input`
   padding-right: ${({ theme }) => theme.spacing[6]};
 `
 
-type InputTextProps = React.ComponentProps<typeof InputText>
+type InputTextProps = ComponentProps<typeof StyledInputText>
+
+const InputText = forwardRef<
+  ElementRef<typeof StyledInputText>,
+  InputTextProps
+>((props) => <StyledInputText {...props} />)
+
 export type { InputTextProps }
 
 InputText.displayName = 'InputText'
