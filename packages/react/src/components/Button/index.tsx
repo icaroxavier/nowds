@@ -8,9 +8,10 @@ export type ButtonProps = {
 export function Button({
   children,
   variant = 'primary',
+  ...props
 }: ButtonProps): ReactNode {
   return (
-    <ButtonContainer $variant={variant}>
+    <ButtonContainer $variant={variant} {...props}>
       <ButtonContent $variant={variant}>{children}</ButtonContent>
     </ButtonContainer>
   )
