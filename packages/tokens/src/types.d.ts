@@ -4,21 +4,10 @@ import { FontWeights } from './fontWeights'
 import { Fonts } from './fonts'
 import { LineHeights } from './lineHeights'
 import { Spacing } from './spacing'
+import { Colors } from './themes/defaultTheme/colors'
+import { Gradients } from './themes/defaultTheme/gradients'
 
-export type { FontSizes, LineHeights, Spacing }
-
-export type Colors = {
-  primary: string
-  nowPurple: string
-  nowGreen: string
-  nowLight: string
-  white: string
-  text: string
-}
-
-export type Gradients = {
-  primary: string
-}
+export type { FontSizes, LineHeights, Spacing, Colors, Gradients }
 
 export type ThemeType = {
   isDarkTheme: boolean

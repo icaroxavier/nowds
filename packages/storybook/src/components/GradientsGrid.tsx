@@ -6,7 +6,11 @@ export function GradientsGrid() {
     return (
       <div
         key={key}
-        style={{ background: gradient as string, padding: '2rem' }}
+        style={{
+          background: gradient as string,
+          padding: '1rem 2rem',
+          marginBottom: '0.25rem',
+        }}
       >
         <div
           style={{
@@ -16,7 +20,11 @@ export function GradientsGrid() {
             color: '#000',
           }}
         >
-          <strong>${key}</strong>
+          <strong>
+            theme.gradients{isNaN(Number(key)) ? '.' : '['}
+            {key}
+            {isNaN(Number(key)) ? '' : ']'}
+          </strong>
           <span>{gradient as string}</span>
         </div>
       </div>
