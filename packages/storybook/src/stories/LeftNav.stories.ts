@@ -21,7 +21,35 @@ type Story = StoryObj<LeftNavProps>
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Primary: Story = {
   args: {
-    label: 'Apps',
-    numberIcons: 2,
+    menuItems: [
+      {
+        icon: '../../assets/images/Left Navigation/apps.svg',
+        label: 'Apps',
+      },
+      {
+        icon: '../../assets/images/Left Navigation/Home.png',
+        label: 'Home',
+      },
+      {
+        icon: '../../assets/images/Left Navigation/Docs.svg',
+        label: 'Docs',
+      },
+      {
+        icon: '../../assets/images/Left Navigation/Entities.svg',
+        label: 'Entities',
+      },
+      {
+        icon: '../../assets/images/Left Navigation/nowspace.svg',
+        label: 'nowspace',
+      },
+      {
+        icon: '../../assets/images/Left Navigation/Submit.svg',
+        label: 'Submit',
+      },
+      {
+        icon: '../../assets/images/Left Navigation/Templates.svg',
+        label: 'Templates',
+      },
+    ],
   },
 }

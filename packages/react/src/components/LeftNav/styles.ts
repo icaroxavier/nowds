@@ -29,6 +29,13 @@ export const IconContainer = styled.div`
   flex-direction: column;
   gap: 6px;
   padding: 14px 8px;
+  width: 75%;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid red;
+    border-radius: 16px;
+  }
 `
 
 export const LabelText = styled.p`
@@ -44,8 +51,8 @@ export const LabelText = styled.p`
 
 export const NavIcon = styled.img`
   display: flex;
+  align-self: center;
   width: 28px;
   height: 28px;
-  align-items: flex-start;
   gap: 10px;
 `
