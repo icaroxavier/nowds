@@ -51,5 +51,6 @@ export const Primary: Story = {
         label: 'Templates',
       },
     ],
+    navArrow: '../../assets/images/downArrow.svg',
   },
 }

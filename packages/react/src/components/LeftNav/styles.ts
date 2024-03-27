@@ -29,11 +29,10 @@ export const IconContainer = styled.div`
   flex-direction: column;
   gap: 6px;
   padding: 14px 8px;
-  width: 75%;
+  width: 100%;
   cursor: pointer;
-
   &:hover {
-    border: 1px solid red;
+    box-shadow: 0 0 0 1px rgba(255, 0, 0, 0.5); /* Adicionando margem vermelha de 2px */
     border-radius: 16px;
   }
 `
@@ -49,9 +48,21 @@ export const LabelText = styled.p`
   text-transform: uppercase;
 `
 
-export const NavIcon = styled.img`
+export const ArrowNavContainer = styled.div`
   display: flex;
-  align-self: center;
+  justify-content: center;
+  position: relative;
+`
+
+export const NavArrow = styled.img`
+  position: absolute;
+  left: 50px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+`
+
+export const NavIcon = styled.img`
   width: 28px;
   height: 28px;
   gap: 10px;
