@@ -1,14 +1,17 @@
+import { MouseEvent, ReactNode } from 'react'
 import { IconContainer, LabelText, NavContainer, NavIcon } from './styles'
-import apps from '../../../../assets/images/Apps.png'
 
-export type LeftNavProps = {
-  numberIcons: number
-  label: string
+export type MenuItemsProps = {
+  icon: ReactNode
+  label: ReactNode
+  onClick: (event: MouseEvent) => void
 }
 
-export const LeftNav = ({ numberIcons = 0, label }: LeftNavProps) => {
-  const iconsArray = Array.from({ length: numberIcons })
+export type LeftNavProps = {
+  menuItems: MenuItemsProps[]
+}
 
+export const LeftNav = ({ menuItems }: LeftNavProps) => {
   return (
     <NavContainer>
       {iconsArray.map((_, index) => (
